@@ -37,3 +37,7 @@ Alternative for that
 
 > git diff (In working repository)
 > git diff --staged (If you added to Staging area and you want to check)
+
+## Removing files from Git
+
+> git rm --cached FileName
