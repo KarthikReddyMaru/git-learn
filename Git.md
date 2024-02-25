@@ -20,6 +20,10 @@ In VSCode U -> Untracked, M -> Modified, A -> Added
 
 > git log
 
+TO get the log in pretty manner
+
+> git log --pretty=oneline
+
 ## Adding files from Staging area to GitHub repo
 
 > git commit -m "Message"
@@ -41,3 +45,50 @@ Alternative for that
 ## Removing files from Git
 
 > git rm --cached FileName
+
+## Pushing files to Remote repo
+
+> git remote add origin <https://github.com/....git>
+
+To check the remote repo you are connected
+
+> git remote -v
+
+To push
+
+> git push -u origin main
+
+To remove any remote connection from your device
+
+> git remote remove origin
+
+## Tags
+
+Tags are used to mark significant points from the history of the project.
+
+> git tag
+
+To add tag
+
+> git tag v1.0 -m "Version 1.0"
+
+To push these tags to remote server
+
+> git push origin v1.0
+
+## Downloading a repo
+
+> git clone <https://github.com>
+
+TO view a specific tag
+
+> git show v1.0
+
+## Branch
+
+Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
+
+To create a branch
+
+> git switch -c/--create branchName
+> git checkout -b branchName
