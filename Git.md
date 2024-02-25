@@ -1,5 +1,10 @@
 # Git
 
+Let the git know who you are
+
+> git config --global user.name "Karthik"
+> git config --global user.email "<Someone@gmail.com>"
+
 ## Initializing the Git repository
 
 > git init -b main
@@ -11,6 +16,8 @@ Initialized empty Git repository in C:/Karthik/Subject/Git/.git/
 > git status
 
 In VSCode U -> Untracked, M -> Modified, A -> Added
+
+> git status --short
 
 ## Adding files from working directory to Staging Area
 
@@ -92,3 +99,7 @@ To create a branch
 
 > git switch -c/--create branchName
 > git checkout -b branchName
+
+To delete a branch in the git
+
+> git branch -d feature1
